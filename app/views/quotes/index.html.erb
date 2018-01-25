@@ -2,7 +2,7 @@
 
 <h1>Quotes</h1>
 
-<table>
+<table class="w3-table-all">
   <thead>
     <tr>
       <th>Author</th>
@@ -18,9 +18,9 @@
         <td><%= quote.author %></td>
         <td><%= quote.quotation %></td>
         <td><%= quote.source %></td>
-        <td><%= link_to 'Show', quote %></td>
-        <td><%= link_to 'Edit', edit_quote_path(quote) %></td>
-        <td><%= link_to 'Destroy', quote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', quote, class:"w3-button w3-grey" %></td>
+        <td><%= link_to 'Edit', edit_quote_path(quote), class:"w3-button w3-blue" %></td>
+        <td><%= link_to 'Destroy', quote, method: :delete, data: { confirm: 'Are you sure?' }, class:"w3-button w3-grey" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Quote', new_quote_path %>
+<%= link_to 'New Quote', new_quote_path , class:"w3-button w3-red w3-round-xlarge" %>

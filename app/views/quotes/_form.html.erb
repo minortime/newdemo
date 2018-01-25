@@ -13,20 +13,20 @@
 
   <div class="field">
     <%= form.label :author %>
-    <%= form.text_field :author, id: :quote_author %>
+    <%= form.text_field :author, id: :quote_author , class:"w3-input w3-border" %>
   </div>
 
   <div class="field">
     <%= form.label :quotation %>
-    <%= form.text_field :quotation, id: :quote_quotation %>
+    <%= form.text_field :quotation, id: :quote_quotation , class:"w3-input w3-border" %>
   </div>
 
   <div class="field">
     <%= form.label :source %>
-    <%= form.text_field :source, id: :quote_source %>
+    <%= form.text_field :source, id: :quote_source , class:"w3-input w3-border" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit :Submit, class:"w3-button w3-red w3-round-xlarge" %>
   </div>
 <% end %>
